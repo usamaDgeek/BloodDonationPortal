@@ -37,7 +37,7 @@ SECRET_KEY = ('SECRET_KEY', 'i!0oszd2j0ys=elf(x13n1yrx(2nik^-h6882t$@ato$e*u)tm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bloodportal.herokuapp.com']
+ALLOWED_HOSTS = ['bdp.herokuapp.com']
 
 GEOIP_PATH = os.path.join(BASE_DIR, 'geoip')
 
