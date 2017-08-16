@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <ul>
+        <li>{{ object.name }}
+            <a href="{% url 'bloodcatalog:update' object.pk %}">Update</a></li>
+        Created on {{ object.timestamp }}<br>
+        Updated {{ object.updated | timesince }} ago
+    </ul>
+
+{% endblock %}

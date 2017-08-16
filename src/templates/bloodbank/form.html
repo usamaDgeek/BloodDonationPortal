@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Add Blood Source</h1>
+
+    {% if form.errors.non_field_error %}
+        {{ form.errors.non_field_error }}
+    {% endif %}
+
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+
+{% endblock %}
